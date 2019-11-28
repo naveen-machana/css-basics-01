@@ -2,7 +2,7 @@
   background: #ff1b68;
 }
 
-h1 {
+#product-overview h1 {
   font-family: 'Anton', sans-serif;
   color: white;
 }
@@ -13,4 +13,8 @@ h1 {
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: inherit;
 }
