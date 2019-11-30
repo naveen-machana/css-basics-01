@@ -1,4 +1,11 @@
 * {
+  /*
+  had box-sizing been defined in body element below,
+  box-sizing would not have been taken effect for block
+  level elements.
+  box-sizing is to set height and width values that includes
+  border and padding values.
+  */
   box-sizing: border-box;
 }
 
