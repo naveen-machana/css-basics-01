@@ -17,3 +17,16 @@ different effect.
 inline-block: will make the elements to behave as inline elements that is they can
 sit next to the other elements, but will allow you to set the border, margin,
 padding, which would not have been possible for inline elements.
+
+They also use the box-model you learned about but margin-top  and margin-bottom  have
+ no effect on the element. padding-top  and padding-bottom  also have a different 
+ effect. They don't push the adjacent content away but they will do so with the 
+ element border. You can read more about that behavior in the following article:
+  https://hacks.mozilla.org/2015/03/understanding-inline-box-model/
+
+Additionally, setting a width  or height  on an inline element also has no effect. 
+The width and height is auto to take as much space as required by the content.
+
+Logically, this makes sense since you don't want your inline elements to destroy 
+your multi-line text-layout. If you want to do so or need both block-level and 
+inline behavior, you can set display: inline-block  to merge behaviors.
