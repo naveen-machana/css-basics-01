@@ -40,3 +40,7 @@ h1 {
   background-color: #2ddf5c;
 
 }
+
+.main-nav__item {
+  display: inline-block;
+}

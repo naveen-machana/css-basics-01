@@ -1,0 +1,19 @@
+block level elements: div, section
+inline elements: anchor tag.
+
+box-sizing: 
+had box-sizing been defined in body element below, box-sizing would not have been
+taken effect for block level elements. That is why box-sizing: border-box will be 
+in universal selector, which is *.
+box-sizing is to set height and width values of an element. We can modify
+its value for width, heights dimensions to include border and padding values as well.
+
+display property: allows us to change the behaviour of an element from inline to
+block or block to inline or to inline-block mix or even to none(to remove it from
+document flow, NOTE: element would still be present in DOM.) 
+
+we cannot set margin-top, margin-bottom. and padding-bottom, padding-top has a
+different effect.
+inline-block: will make the elements to behave as inline elements that is they can
+sit next to the other elements, but will allow you to set the border, margin,
+padding, which would not have been possible for inline elements.
