@@ -37,6 +37,7 @@ header > div {
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 .main-header {
@@ -95,4 +96,18 @@ header > div {
   color: #ff1b68;
   background-color: white;
   border: none;
+}
+
+.plan {
+  background: #d5ffdc;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px;
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.plan--highlighted {
+  background: #19b84c;
 }
