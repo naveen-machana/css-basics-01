@@ -122,6 +122,22 @@ header > div {
   border-radius: 8px;
 }
 
+.plan-title {
+  color: #0e4f1f;
+}
+
+.plan-price {
+  color:  #858585;
+}
+
+.plan--highlighted .plan-title {
+  color: white;
+}
+
+.plan--highlighted .plan-price {
+  color: #0e4f1f;
+}
+
 .plan-features{
   list-style: none;
   text-align: center;
