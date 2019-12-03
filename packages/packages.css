@@ -77,4 +77,5 @@ main {
   height: 100%;
   width: 100%;
   background: url("../images/plans-background.jpg");
+  z-index: -1;
 }
