@@ -181,3 +181,33 @@ header > div {
   margin: 32px;
 
 }
+
+.key-features__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  margin-right: 20px;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-features__image {
+  height: 128px;
+  width: 128px;
+  border-radius: 64px;
+  background: #ffcede;
+  border: 2px solid #424242;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
