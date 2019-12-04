@@ -9,6 +9,7 @@ main {
   border-left: none;
   background: #c3e4cc;
   position: relative;
+  z-index: 1;
 }
 
 .package a {
@@ -90,4 +91,5 @@ main {
   background: #ff5454;
   padding: 8px;
   color: white;
+  z-index: 10;
 }
