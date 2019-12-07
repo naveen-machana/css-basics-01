@@ -38,6 +38,12 @@ header > div {
   font-size: 22px;
   text-decoration: none;
   color: #0e4f1f;
+  height: 23px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  height: 100%;
 }
 
 .main-nav {
