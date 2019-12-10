@@ -77,7 +77,8 @@ main {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: url("../images/plans-background.jpg");
+  background: url("../images/plans-background.jpg") center/cover;
+  filter: grayscale(40%);
   z-index: -1;
 }
 
