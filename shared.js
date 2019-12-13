@@ -18,11 +18,15 @@ selectedPlanButtons.forEach((button) => {
 
 var misclisteners = [backdrop, noButton];
 misclisteners.forEach((listener) => {
-  listener.addEventListener('click', () => {
-    backdrop.classList.remove('open');
-    modal.classList.remove('open');
-    mobileNav.classList.remove('open');
-  });
+  if (listener) {
+    listener.addEventListener('click', () => {
+      backdrop.classList.remove('open');
+      if (modal) {
+        modal.classList.remove('open');
+      }
+      mobileNav.classList.remove('open');
+    });
+  }
 });
 
 toggleButton.addEventListener('click', () => {
