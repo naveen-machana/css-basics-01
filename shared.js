@@ -1,3 +1,23 @@
 var backdrop = document.querySelector('.backdrop');
-//console.dir(backdrop);
-backdrop.style.display = 'block';
+var modal = document.querySelector('.modal');
+var noButton = document.querySelector('.modal__action--negative');
+console.dir(backdrop);
+console.dir(noButton);
+console.dir(modal);
+
+var selectedPlanButtons = document.querySelectorAll('.plan button');
+
+selectedPlanButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    backdrop.style.display = 'block';
+    modal.style.display = 'block';    
+  });
+});
+
+var misclisteners = [backdrop, noButton];
+misclisteners.forEach((listener) => {
+  listener.addEventListener('click', () => {
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
+  });
+});
