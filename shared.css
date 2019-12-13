@@ -74,6 +74,7 @@ header > div {
   color: #0e4f1f;
   height: 1.5rem;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -83,7 +84,7 @@ header > div {
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 74px);
+  width: calc(100% - 122px);
   vertical-align: middle;
 }
 
