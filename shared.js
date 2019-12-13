@@ -8,21 +8,24 @@ var selectedPlanButtons = document.querySelectorAll('.plan button');
 
 selectedPlanButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    backdrop.style.display = 'block';
-    modal.style.display = 'block';    
+    /* backdrop.style.display = 'block';
+    modal.style.display = 'block';    */
+    // modal.className = 'open';
+    backdrop.classList.add('open');
+    modal.classList.add('open');
   });
 });
 
 var misclisteners = [backdrop, noButton];
 misclisteners.forEach((listener) => {
   listener.addEventListener('click', () => {
-    backdrop.style.display = 'none';
-    modal.style.display = 'none';
-    mobileNav.style.display = 'none';
+    backdrop.classList.remove('open');
+    modal.classList.remove('open');
+    mobileNav.classList.remove('open');
   });
 });
 
 toggleButton.addEventListener('click', () => {
-  mobileNav.style.display = 'block';
-  backdrop.style.display = 'block';
+  mobileNav.classList.add('open');
+  backdrop.classList.add('open');
 });
