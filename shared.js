@@ -1,9 +1,8 @@
 var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
 var noButton = document.querySelector('.modal__action--negative');
-console.dir(backdrop);
-console.dir(noButton);
-console.dir(modal);
+var toggleButton = document.querySelector('.toggle-button');
+var mobileNav = document.querySelector('.mobile-nav');
 
 var selectedPlanButtons = document.querySelectorAll('.plan button');
 
@@ -19,5 +18,11 @@ misclisteners.forEach((listener) => {
   listener.addEventListener('click', () => {
     backdrop.style.display = 'none';
     modal.style.display = 'none';
+    mobileNav.style.display = 'none';
   });
+});
+
+toggleButton.addEventListener('click', () => {
+  mobileNav.style.display = 'block';
+  backdrop.style.display = 'block';
 });
