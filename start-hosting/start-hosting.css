@@ -22,13 +22,13 @@ main {
   display: block;
   margin-top: 1rem;
   width: 100%;
-  vertical-align: bottom;
 }
 
 .signup-form input[id*="terms"], 
 .signup-form input[id*="terms"] + label {
   display: inline-block;
   width: auto;
+  vertical-align: bottom;
 }
 
 .signup-form input:not([type='checkbox']),
@@ -64,6 +64,12 @@ main {
   outline: none;
 }
 
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
 
 .signup-form button[type="submit"] {
   display: block;
