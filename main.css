@@ -94,7 +94,7 @@
     width: 30%;
     vertical-align: middle;
     min-width: 13rem;
-    max-width: 25rem;
+    max-width: 20rem;
   }
 
   .plans__list {
@@ -126,11 +126,13 @@
   text-align: center;
 }
 
-.key-feature {
-  display: inline-block;
-  margin-right: 20px;
-  width: 30%;
-  vertical-align: top;
+@media (min-width: 40rem) {
+  .key-feature {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 20rem;
+  }
 }
 
 .key-features__image {
