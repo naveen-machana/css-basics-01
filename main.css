@@ -22,6 +22,17 @@
   position: absolute;
   left: 3%;
   bottom: 5%;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
 
 .section-title {
