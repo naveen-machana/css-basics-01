@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AnonymousPro';
-    src: url('anonymousPro-Regular.ttf');
+    src: url('anonymousPro-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'AnonymousPro';
